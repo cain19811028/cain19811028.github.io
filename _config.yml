@@ -1,83 +1,102 @@
+# Site settings
 title: Cain's Blog
-subtitle: Cain's Tech Blog
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+SEOTitle: Cain's Blog
+header-img: img/home-bg.jpg
+email: cain19811028@gmail.com
+description: ""
+keyword: "諶宏軍, Hung-Chun Chen, Cain Chen, cain19811028"
+url: "https://cain19811028.github.io"
+baseurl: ""
 
-author_logo: profile.jpg
-disqus_shortname: cain19811028  #for comments using disqus
-author: cain19811028
-author_bio: #Hello, my name is John Doe.I am an award winning Full Stack Web Developer and UI/UX Javascript specialist.Check out my blog articles, React.JS and Vue.JS UI components at the code laboratory.Feel free to take a look at my latest projects below.Based in London, UK. 
-author_email: "cain19811028@gmail.com"
-author_location: Taiwan
-author_website_url: "https://cain19811028.github.io"
+# Publish posts or collection documents with a future date.
+future: true
 
-# social links
-github_username: cain19811028
-facebook_username: cain19811028
-medium_username: cain19811028 
-linkedin_username: cain-chen-5a984443
-behance_username: yourusername
-instagram_username: yourusername
-telegram_username: yourusername
-dribbble_username: yourusername 
-flickr_username: yourusername
-twitter_username: yourusername
+# SNS settings
+RSS: false
+github_username:    cain19811028
+facebook_username:  cain19811028
+medium_username:    cain19811028 
+linkedin_username:  cain-chen-5a984443
 
-# title: Cain's Tech Blog
-# author: cain19811028
-# email: cain19811028@domain.com
-# description: > # this means to ignore newlines until "show_exerpts:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
-# show_excerpts: true # set to true to show excerpts on the homepage
 
-# # Minima date format
-# # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-# sass:
-#   sass_dir: _sass
 
-# plainwhite:
-#   name: Cain
-#   tagline: Developer
-#   date_format: "%b %-d, %Y"
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
 
-#   # generate social links in footer
-#   social_links:
-#     github:  cain19811028
-#     facebook: cain19811028
-#     linkedIn: cain-chen-5a984443
-#     rss: rss
-#     # twitter: cain19811028
-#     # dribbble: jekyll
-#     # flickr:   jekyll
-#     # instagram: jekyll
-#     # pinterest: jekyll
-#     # youtube: jekyll
-#     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-#     # youtube_channel_name: CloudCannon
-#     # telegram: jekyll
-#     # googleplus: +jekyll
-#     # microdotblog: jekyll
 
-#     # Mastodon instances
-#     # mastodon:
-#     # - username: jekyll
-#     #   instance: example.com
-#     # - username: jekyll2
-#     #   instance: example.com
 
-# # If you want to link only specific pages in your header, uncomment
-# # this and add the path to the pages in order as they should show up
-# #header_pages:
-# # - about.md
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
 
-# # Build settings
-# remote_theme: thelehhman/plainwhite-jekyll
 
-# plugins:
-#   - jekyll-seo-tag
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+disqus_username: cain19811028
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-141362671-1'
+ga_domain: cain19811028.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "This is a sidebar"
+sidebar-avatar: /img/profile.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+friends: []
