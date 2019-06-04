@@ -1,2 +1,2 @@
 
-Hi, I am *@cain19811028* (Hung-Chun, Chen)
+Hi, I am Hung-Chun, Chen (*@cain19811028*)
