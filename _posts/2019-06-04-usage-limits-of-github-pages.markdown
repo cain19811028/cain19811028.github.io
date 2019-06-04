@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "GitHub Pages 的限制"
-date:   2019-06-04 14:00:00 +0800
-categories: GitHub
+title: "GitHub Pages 的限制"
+date: 2019-06-04 14:00:00 +0800
+author: "cain19811028"
+tags:
+  - GitHub
 ---
 ### GitHub Pages 的限制：
 
