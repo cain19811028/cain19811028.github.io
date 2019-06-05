@@ -13,8 +13,11 @@ tags:
  - LiveRe：[https://www.livere.com/](https://www.livere.com/)
  - HyperComments：[https://www.hypercomments.com/](https://www.hypercomments.com/)
  - IntenseDebate：[https://www.intensedebate.com/](https://www.intensedebate.com/)
+ - GraphComment：[https://graphcomment.com/](https://graphcomment.com/)
  - Vuukle：[https://vuukle.com/](https://vuukle.com/)
+ - Spot.IM：[https://www.spot.im/](https://www.spot.im/)
 
 ### 評比網站：
 
   - G2：[https://www.g2.com/categories/commenting-systems](https://www.g2.com/categories/commenting-systems)
+  - SimilarTech：[https://www.similartech.com/categories/comments-system](https://www.similartech.com/categories/comments-system)
