@@ -18,12 +18,14 @@ tags:
  - [Vuukle](https://vuukle.com/)：most popular widget is a powerful, highly customizable and fast commenting system.
  - [Spot.IM](https://www.spot.im/)：take back ownership of your audience by building a thriving social community to drive conversation, pageviews, clicks, and revenue.
 
-| Name  | Free | Social Login Type |
-|---|---|---|
-| Disqus | V | 4 |
-| LiveRe | V | 10 |
-| Laibili | V | 17 |
-| HyperComments | X | 9 |
+
+| Name          | Free | Social Login Type |
+| ---           |:-:   |:-:                |
+| Disqus        | V    | 4                 |
+| LiveRe        | V    | 10                |
+| Laibili       | V    | 17                |
+| HyperComments | X    | 9                 |
+
 
 ### 評比網站：
 
