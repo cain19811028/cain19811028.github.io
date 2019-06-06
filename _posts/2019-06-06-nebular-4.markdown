@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Nebular 4.0.0 釋出新版主題畫面"
+subtitle: "Nebular 4.0.0 new themes"
+date: 2019-06-06 10:00:00 +0800
+author: "cain19811028"
+tags:
+  - IoT
+  - Angular
+---
+### 官方資訊：
+
+ - 官網：[https://akveo.github.io/nebular/](https://akveo.github.io/nebular/)
+ - GitHub：[https://github.com/akveo/nebular](https://github.com/akveo/nebular)
+ - Demo Site：[https://akveo.com/ngx-admin/pages/dashboard](https://akveo.com/ngx-admin/pages/dashboard)
+
+#### What's included
+
+ - 4 Visual Themes, including new Dark easily customizable to your brand
+ - 35+ Angular UI components with a bunch of handy settings and configurations
+ - 3 Auth strategies and Security - authentication and security layer easily configurable for your API
+ - Powerful theming engine with custom CSS properties mode
+ - SVG Eva Icons support - 480+ general purpose icons
+
+![](/img/in-post/2019-06-06-nebular-4-01.png)
+
+### 心得：
+
+最近看了蠻多 IoT Dashboard 的頁面設計，這次從 Nebular Demo 網站看到預設的 Cosmic 主題的紫色畫面，真是頗為~~毀三觀~~驚豔！第一次看到紫色系 Dashboard 還是感到非常神奇，期待接下來逛展能看到更多繽紛的色系出現！倒是另外兩個綠色系 Light 和白色系 Corporate 主題也都還蠻不錯的，有機會應該來套用一下試試看！
