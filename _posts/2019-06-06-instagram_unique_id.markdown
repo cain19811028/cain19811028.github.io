@@ -72,6 +72,41 @@ CREATE TABLE person (
 INSERT INTO person(name) VALUES ('Cain') RETURNING id;
 ```
 
+| id  |
+| --- |
+| 16989044114195462 |
+
+### 心得：
+
+單純從 PostgreSQL PRIMARY KEY 的角度來看：
+
+ - Auto Increment ID：
+   - 優點：
+     1. 簡單、好記
+     2. 方便排序
+   - 缺點：
+     1. 分散式系統下無法確保唯一性
+     2. 分表或需要合併時會顯得比較麻煩
+     3. 容易有安全性的問題（例：容易看出有多少用戶，並且可以隨機亂測使用者代碼）
+
+ - UUID：
+   - 優點：
+     1. 本地生成，速度快，不需用到網路 IO
+     2. Data Migration 時通常比較不會有問題
+   - 缺點：
+     1. 不易閱讀
+     2. 沒有順序性
+     3. 佔用較大空間
+     4. String 查詢效率普遍較差
+
+ - Instagram Unique ID：
+   - 優點：
+     1. 純數字
+     2. 可排序
+     3. 利用 logic Shard 改善 Snowflake Worker 的問題，達到去中心化
+   - 缺點：
+     1. 只能用 69 年！？ 41 bits 的 Timestamp 可以使用 (1L << 41) / (1000L 60 60 24 365) = 69年；
+
 ### 參考來源：
 
  - Sharding & IDs at Instagram：[https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c](https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c)
