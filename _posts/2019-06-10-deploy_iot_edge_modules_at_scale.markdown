@@ -14,6 +14,7 @@ tags:
  - 使用 Azure Portal：[https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-monitor](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-monitor)
  - 使用 Azure CLI (Command-Line Interface)：[https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-monitor-cli](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-monitor-cli)
  - IoT Hub REST API：[https://docs.microsoft.com/en-us/rest/api/iothub/](https://docs.microsoft.com/en-us/rest/api/iothub/)
+ - Azure IoT SDK for Python：[https://github.com/Azure/azure-iot-sdk-python](https://github.com/Azure/azure-iot-sdk-python)
 
 ### 心得：
 
