@@ -26,6 +26,9 @@ tags:
 
 ![](/img/in-post/2019-06-07-install-elasticsearch-on-windows-01.png)
 
+ - 查詢 cluster 狀態：[http://localhost:9200/_cluster/health?pretty](http://localhost:9200/_cluster/health?pretty)
+ - 查詢 node 狀態：[http://localhost:9200/_nodes?pretty](http://localhost:9200/_nodes?pretty)
+
 ### 後記：
 
 結果裝好後沒多久，在網上就爬文爬到 AWS 和 Azure 都有相關線上的服務，Amazon Elasticsearch Service 直接寫明：免費方案客戶提供每月多達 750 小時的 t2.small.elasticsearch 執行個體和每月 10 GB 的選用 EBS 儲存免費用量。Azure Search 雖然好像也有免費方案可用，但條件限制比 AWS 多一些，有空再來深入研究好好比對一下！
