@@ -16,6 +16,7 @@ tags:
 
  - Python version：3.7.3
  - MAC OS version：10.13.5
+ - Linux verson：Ubuntu 18.04 LTS
 
 接下來改用 Linux 來試試看範例程式 iothub_twin_sample.py，結果一下子就成功了，順利 update module twin！
 
@@ -25,8 +26,6 @@ CONNECTION_STRING = "HostName=XXX;SharedAccessKeyName=YYY;SharedAccessKey=ZZZ"
 DEVICE_ID = "AAA"
 MODULE_ID = "BBB"
 ```
-
- - Linux verson：Ubuntu 18.04 LTS
 
 ### 相關問題：
 
