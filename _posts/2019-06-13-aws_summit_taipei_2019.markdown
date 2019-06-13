@@ -23,6 +23,12 @@ tags:
 #### AWS Step Functions：
 使用視覺化工作流程建立分散式應用程式，可以協調多個 AWS 服務成為無伺服器的工作流程。
 
+#### Amazon Rekognition：
+識別各種物件、人物、文字、場景和活動，並偵測任何不當的內容。還可以將偵測、分析及比對臉部運用在使用者驗證、計算人數和公共安全等各種使用案例。
+
+#### Amazon Lex：
+提供自動語音辨識（ASR）的進階深度學習功能，可將語音轉換為文字，也提供自然語言理解（NLU）來辨識文字的含義，讓應用程式能具備高度參與的使用者體驗和逼真的交談互動功能。
+
 ### 相關連結：
 
  - AWS 台北高峰會：[https://aws.amazon.com/tw/summits/taipei/](https://aws.amazon.com/tw/summits/taipei/)
