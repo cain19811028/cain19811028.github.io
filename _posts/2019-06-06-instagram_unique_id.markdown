@@ -7,6 +7,8 @@ author: "cain19811028"
 tags:
   - PostgreSQL
   - Unique ID
+  - UUID
+  - Snowflake
 ---
 ### 前言
 
