@@ -21,6 +21,29 @@ tags:
 
 `Tor` 是實現匿名通訊的自由軟體。其名源於「`The Onion Router`」（洋蔥路由器）的英語縮寫。用戶可透過 Tor 接達由全球志願者免費提供，包含7000+個中繼的覆蓋網路，從而達至隱藏用戶真實位址、避免網路監控及流量分析的目的。Tor 的設計原意在於保障用戶的個人隱私，以及不受監控地進行秘密通訊的自由和能力。
 
+### About Tor（The Onion Router）：
+
+ - `Browse Privately. Explore Freely.`
+ - `Defend yourself against tracking and surveillance. Circumvent censorship.`
+
+ > BLOCK TRACKERS：
+   - Tor Browser isolates each website you visit so third-party trackers and ads can't follow you. 
+   - Any cookies automatically clear when you're done browsing. So will your browsing history.
+
+  > DEFEND AGAINST SURVEILLANCE
+   - Tor Browser prevents someone watching your connection from knowing what websites you visit. 
+   - All anyone monitoring your browsing habits can see is that you're using Tor.
+  
+  > RESIST FINGERPRINTING
+   - Tor Browser aims to make all users look the same making it difficult for you to be fingerprinted based on your browser and device information.
+
+  > MULTI-LAYERED ENCRYPTION
+   - Your traffic is relayed and encrypted three times as it passes over the Tor network. 
+   - The network is comprised of thousands of volunteer-run servers known as Tor relays.
+
+  > BROWSE FREELY
+   - With Tor Browser, you are free to access sites your home network may have blocked.
+
 ### 相關連結：
 
  - How to Sell Drugs Online (Fast)：[https://www.netflix.com/tw-en/title/80218448](https://www.netflix.com/tw-en/title/80218448)
