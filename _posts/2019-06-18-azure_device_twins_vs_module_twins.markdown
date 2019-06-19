@@ -11,7 +11,7 @@ tags:
 ### Azure Device Twins： 
 官方說明：[Understand and use device twins in IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins)
 
-Device Twins 是存放 Device 狀態資訊的 JSON 文件，包括中繼資料、組態和條件。
+Device Twins 是存放 Device 狀態資訊的 JSON 文件，包括 metadata、configurations 和 conditions。
 使用 Device Twins 可以：
 
  - 在雲端儲存 Device 特定的 metadata。例如，販賣機的部署位置。
