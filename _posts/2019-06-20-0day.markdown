@@ -1,0 +1,25 @@
+---
+layout: post
+title: "0day 漏洞與 0day 攻擊"
+subtitle: "What is 0day?"
+date: 2019-06-20 15:00:00 +0800
+author: "cain19811028"
+tags:
+  - Security
+---
+
+### 0DAY 定義：
+
+ - 早期的 0day 是指軟件或遊戲發行後的 24 小時內就出現破解版本
+ - 現在的 0day 則是泛指已經被發現，而官方還沒有提供相關 patch 的漏洞
+
+### Zerodium：
+
+ - 專門收購 0day 漏洞與攻擊程式的漏洞交易平台
+ - 目前最高的收購收購價為 iOS 12.x 遠端漏洞攻擊程式，喊價 200 美金
+
+![](/img/in-post/2019-06-20-0day.png)
+
+### 相關連結：
+
+ - Zerodium：[https://zerodium.com/](https://zerodium.com/)
