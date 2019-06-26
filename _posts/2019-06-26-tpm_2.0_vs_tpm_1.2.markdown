@@ -1,0 +1,34 @@
+---
+layout: post
+title: "TPM 2.0 與 TPM 1.2 的差異"
+subtitle: "TPM 2.0 vs TPM 1.2"
+date: 2019-06-26 22:00:00 +0800
+author: "cain19811028"
+tags:
+  - Security
+  - TPM
+---
+
+### TPM wiki：
+
+受信任的平台模組（Trusted Platform Module, TPM）是一種儲存金鑰、密碼和數位憑證的微控制器。
+
+ - TPM 1.2：2011/03/03
+ - TPM 2.0：2016/09/29
+
+| 演算法類型   | 演算法名稱 | TPM 1.2 | TPM 2.0 |
+| ---         |:-:        |:-:      |:-:      |
+| 非對稱式     | RSA 1024  | 是      | 可選    |
+| 　　　　     | RSA 2048  | 是      | 是      |
+| 　　　　     | ECC P256  | 否      | 是      |
+| 　　　　     | ECC BN256 | 否      | 是      |
+| 對稱式　     | AES 128   | 可選    | 是      |
+| 　　　　     | AES 128   | 可選    | 可選    |
+| HASH　　    | SHA-1     | 是      | 是      |
+|     　　    | SHA-1 256 | 否      | 是      |
+| HMAC　　    | SHA-1     | 是      | 是      |
+|     　　    | SHA-1 256 | 否      | 是      |
+
+### 相關網址：
+
+ - 可信平台模組：[https://zh.wikipedia.org/wiki/%E5%8F%AF%E4%BF%A1%E5%B9%B3%E5%8F%B0%E6%A8%A1%E5%9D%97](https://zh.wikipedia.org/wiki/%E5%8F%AF%E4%BF%A1%E5%B9%B3%E5%8F%B0%E6%A8%A1%E5%9D%97)
