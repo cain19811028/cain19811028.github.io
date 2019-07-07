@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Debian 10 - Buster"
+subtitle: "Debian 10 - Buster"
+date: 2019-07-07 22:00:00 +0800
+author: "cain19811028"
+tags:
+  - Linux
+---
+
+### Debian wiki：
+
+Debian 是完全由自由軟體組成的類UNIX作業系統，其包含的多數軟體使用 GNU 通用公共許可協定授權，並由 Debian 計劃的參與者組成團隊對其進行打包、開發與維護。
+
+### Debian 10 - desktop applications and environments：
+
+ - Cinnamon 3.8
+ - GNOME 3.30
+ - KDE Plasma 5.14
+ - LXDE 0.99.2
+ - LXQt 0.14
+ - MATE 1.20
+ - Xfce 4.12
+
+ ※ GNOME 預設使用 Wayland 而不是 Xorg。
+
+### Debian 10 - Security：
+
+ - Debian 10 中包含的 91％ 以上的 Source Code 包將構建逐位相同（bit-for-bit identical）的二進制 Package。這是一項重要的驗證功能，可以保護使用者避免遭到惡意企圖篡改編譯器和構建網絡。
+ - 預設安裝並啟用了 AppArmor 安全模組，這是一個用於限制程式訪問權限的控制框架限。
+
+### 相關網址：
+
+ - Debian 10 `buster` released：[https://www.debian.org/News/2019/20190706](https://www.debian.org/News/2019/20190706)
+ - Installing Debian 10.0：[https://www.debian.org/releases/buster/debian-installer/](https://www.debian.org/releases/buster/debian-installer/)
