@@ -13,7 +13,7 @@
 // Tooltip Init
 // Unuse by Hux since V1.6: Titles now display by default so there is no need for tooltip
 // $(function() {
-//     $("[data-toggle='tooltip']").tooltip();
+//     $("[data-bs-toggle='tooltip']").tooltip();
 // });
 
 
@@ -24,7 +24,7 @@
  * so I modify the _layout/post and CSS to make post-img responsive!
  */
 // $(function() {
-//  $("img").addClass("img-responsive");
+//  $("img").addClass("img-fluid");
 // });
 
 // responsive tables
@@ -35,10 +35,8 @@ $(document).ready(function() {
 
 // responsive embed videos
 $(document).ready(function() {
-    $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-    $('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
-    $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-    $('iframe[src*="vimeo.com"]').addClass('embed-responsive-item');
+    $('iframe[src*="youtube.com"]').wrap('<div class="ratio ratio-16x9"></div>');
+    $('iframe[src*="vimeo.com"]').wrap('<div class="ratio ratio-16x9"></div>');
 });
 
 // Navigation Scripts to Show Header on Scroll-Up

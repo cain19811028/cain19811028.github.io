@@ -184,11 +184,11 @@ body, html {
 /******* Hux Branch *****/
 
 /* navbar - dark mode */
-.navbar-custom .nav li a,
-.navbar-custom .nav li a:hover,
+.navbar-custom .navbar-nav li a,
+.navbar-custom .navbar-nav li a:hover,
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-brand:hover {color:#777;}
-.navbar-default .navbar-toggle .icon-bar {background-color:#777;}
+.navbar-custom .navbar-toggler .icon-bar {background-color:#777;}
 
 html{
 	font-size: 90%;

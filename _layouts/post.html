@@ -16,8 +16,8 @@ layout: default
 
     <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
+                col-xl-8 offset-xl-2
+                col-lg-10 offset-lg-1
                 post-container">
 
                 <!-- Multi-Lingual -->
@@ -36,7 +36,7 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{page.previous.title}}">
                         Previous<br>
                         <span>{{page.previous.title}}</span>
                         </a>
@@ -44,7 +44,7 @@ layout: default
                     {% endif %}
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{page.next.title}}">
                         Next<br>
                         <span>{{page.next.title}}</span>
                         </a>
@@ -66,12 +66,12 @@ layout: default
     <!-- Side Catalog Container -->
         {% if page.catalog %}
             <div class="
-                col-lg-2 col-lg-offset-0
-                visible-lg-block
+                col-xl-2 offset-xl-0
+                d-none d-xl-block
                 sidebar-container
                 catalog-container">
                 <div class="side-catalog">
-                    <hr class="hidden-sm hidden-xs">
+                    <hr class="d-none d-lg-block">
                     <h5>
                         <a class="catalog-toggle" href="#">CATALOG</a>
                     </h5>
@@ -82,8 +82,8 @@ layout: default
 
     <!-- Sidebar Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
+                col-xl-8 offset-xl-2
+                col-lg-10 offset-lg-1
                 sidebar-container">
 
                 <!-- Featured Tags -->

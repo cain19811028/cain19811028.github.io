@@ -9,7 +9,7 @@
 {% endif %}
 
   {% if site.RSS %}
-  <li>
+  <li class="list-inline-item">
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
@@ -19,7 +19,7 @@
   </li>
   {% endif %}
   {% if site.twitter_username %}
-  <li>
+  <li class="list-inline-item">
     <a href="https://twitter.com/{{ site.twitter_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
@@ -29,7 +29,7 @@
   </li>
   {% endif %}
   {% if site.zhihu_username %}
-  <li>
+  <li class="list-inline-item">
     <a target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
@@ -39,7 +39,7 @@
   </li>
   {% endif %}
   {% if site.weibo_username %}
-  <li>
+  <li class="list-inline-item">
     <a target="_blank" rel="noopener noreferrer" href="https://weibo.com/{{ site.weibo_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
@@ -49,7 +49,7 @@
   </li>
   {% endif %}
   {% if site.facebook_username %}
-  <li>
+  <li class="list-inline-item">
     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/{{ site.facebook_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
@@ -59,7 +59,7 @@
   </li>
   {% endif %}
   {% if site.github_username %}
-  <li>
+  <li class="list-inline-item">
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/{{ site.github_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
@@ -69,7 +69,7 @@
   </li>
   {% endif %}
   {% if site.linkedin_username %}
-  <li>
+  <li class="list-inline-item">
     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
       <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>

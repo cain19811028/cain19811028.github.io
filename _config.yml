@@ -65,9 +65,8 @@ disqus_username: https-cain19811028-github-io
 # Baidu Analytics 
 # ba_track_id: [your track id]
 
-# Google Analytics
-ga_track_id: 'UA-141362671-1'
-ga_domain: cain19811028.github.io
+# Google Analytics (Universal Analytics was sunset; set a GA4 Measurement ID like 'G-XXXXXXXXXX' to enable)
+# ga_track_id: 'G-XXXXXXXXXX'
 
 
 

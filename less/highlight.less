@@ -228,12 +228,17 @@ pre.highlight {
   .table {
     margin: 0px;
     table-layout: fixed;
+    --bs-table-bg: transparent;
+    --bs-table-color: inherit;
   }
   table > tbody > tr {
     > td {
       margin: 0;
       border: 0;
       padding: 0;
+      background: transparent;
+      color: inherit;
+      box-shadow: none;
       > pre {
         padding: 14px;
       }

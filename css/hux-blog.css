@@ -1,6 +1,6 @@
 /*!
- * Hux Blog v1.7.0 (http://huxpro.github.io)
- * Copyright 2018 Hux <huxpro@gmail.com>
+ * Cain's Blog v0.0.1 (https://cain19811028.github.io)
+ * Copyright 2026 Cain <cain19811028@gmail.com>
  */
 
 @media (min-width: 1200px) {
@@ -19,11 +19,11 @@
   font-size: 14px;
 }
 .sidebar-container h5 {
-  color: #cccccc;
+  color: #ccc;
   padding-bottom: 1em;
 }
 .sidebar-container h5 a {
-  color: #cccccc !important;
+  color: #ccc !important;
   text-decoration: none;
 }
 .sidebar-container a {
@@ -31,14 +31,14 @@
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
-  color: #0085a1 !important;
+  color: #0085A1 !important;
 }
 .sidebar-container .tags a {
   border-color: #bfbfbf;
 }
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
-  border-color: #0085a1;
+  border-color: #0085A1;
 }
 .sidebar-container .short-about img {
   width: 80%;
@@ -127,7 +127,7 @@
   background-color: #F5F5F5;
 }
 .side-catalog .catalog-body .active a {
-  color: #0085a1!important;
+  color: #0085a1 !important;
 }
 @media (max-width: 1200px) {
   .side-catalog {
@@ -212,10 +212,10 @@
   width: 160px;
   overflow: hidden;
   user-select: none;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   border-radius: 3px;
-  outline-color: #cccccc;
+  outline-color: #ccc;
 }
 .paper-button:hover {
   cursor: pointer;
@@ -229,7 +229,7 @@
   height: 100%;
   /*font-family: 'Roboto';*/
   font-size: 1em;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 .paper-button.colored,
@@ -262,13 +262,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .paper-button input[type="submit"] {
-  outline-color: #cccccc;
+  outline-color: #ccc;
 }
 .paper-button.colored.raised-button input[type="submit"] {
-  color: #ffffff;
+  color: #fff;
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -528,11 +528,16 @@ pre.highlight {
 .highlighter-rouge .highlight .table {
   margin: 0px;
   table-layout: fixed;
+  --bs-table-bg: transparent;
+  --bs-table-color: inherit;
 }
 .highlighter-rouge .highlight table > tbody > tr > td {
   margin: 0;
   border: 0;
   padding: 0;
+  background: transparent;
+  color: inherit;
+  box-shadow: none;
 }
 .highlighter-rouge .highlight table > tbody > tr > td > pre {
   padding: 14px;
@@ -592,10 +597,11 @@ h4 {
 }
 a {
   color: #404040;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
 a img:hover,
 a img:focus {
@@ -636,12 +642,6 @@ select.sel-lang {
   min-height: 28px;
   font-size: 14px;
 }
-table.table > tbody th,
-table.table > thead th,
-table.table > tbody td,
-table.table > thead td {
-  /* border: 1px solid #eee; */
-}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -672,7 +672,7 @@ samp {
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
 .post-container h1,
 .post-container h2,
@@ -761,7 +761,7 @@ samp {
   width: 100%;
 }
 .post-container .pager li > a > span {
-  color: #cccccc;
+  color: #ccc;
   font-weight: normal;
   letter-spacing: 0.5px;
 }
@@ -769,21 +769,24 @@ samp {
   position: absolute;
   padding-top: 1px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   /**
 	 * Layout
 	 * Since V1.6 we use absolute positioning to prevent to expand container-fluid
 	 * which would cover tags. A absolute positioning make a new layer.
 	 */
-  .navbar-default .navbar-collapse {
+  .navbar-custom .navbar-collapse {
     position: absolute;
     right: 0;
+    top: 0;
     border: none;
     background: white;
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.239216) 0px 1px 4px;
     border-radius: 2px;
     width: 170px;
+    padding: 0;
+    z-index: 4;
   }
   /**
 	 * Animation
@@ -794,12 +797,10 @@ samp {
 		 * Sharable code and 'out' function
 		 */
     opacity: 0;
-    transform: scaleX(0);
+    pointer-events: none;
+    transform: scale(0);
     transform-origin: top right;
-    transition: all 200ms cubic-bezier(0.47, 0, 0.4, 0.99) 0ms;
-    -webkit-transform: scaleX(0);
-    -webkit-transform-origin: top right;
-    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.4, 0.99) 0ms;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     /**
 		 *'In' Animation
 		 */
@@ -807,43 +808,31 @@ samp {
   #huxblog_navbar a {
     font-size: 13px;
     line-height: 28px;
+    color: #404040;
+    padding: 10px 15px;
   }
-  #huxblog_navbar .navbar-collapse {
-    height: 0px;
-    transform: scaleY(0);
-    transform-origin: top right;
-    transition: transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
-    -webkit-transform: scaleY(0);
-    -webkit-transform-origin: top right;
-    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
+  #huxblog_navbar .navbar-nav {
+    width: 100%;
+    margin: 7.5px 0;
   }
   #huxblog_navbar li {
     opacity: 0;
     transition: opacity 100ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-    -webkit-transition: opacity 100ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   }
   #huxblog_navbar.in {
-    transform: scaleX(1);
-    -webkit-transform: scaleX(1);
+    transform: scale(1);
     opacity: 1;
-    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-    -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-  }
-  #huxblog_navbar.in .navbar-collapse {
-    transform: scaleY(1);
-    -webkit-transform: scaleY(1);
-    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
-    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    pointer-events: auto;
   }
   #huxblog_navbar.in li {
     opacity: 1;
     transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1) 205ms;
-    -webkit-transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1) 205ms;
   }
 }
 .navbar-custom {
   background: none;
   border: none;
+  padding: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -858,6 +847,9 @@ samp {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
+  font-size: 18px;
+  padding: 15px 15px;
+  margin-right: 0;
   color: white;
   height: 56px;
   line-height: 25px;
@@ -865,14 +857,14 @@ samp {
 .navbar-custom .navbar-brand:hover {
   color: rgba(255, 255, 255, 0.8);
 }
-.navbar-custom .nav li a {
+.navbar-custom .navbar-nav li a {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 20px;
   font-weight: 800;
   letter-spacing: 1px;
 }
-.navbar-custom .nav li a:active {
+.navbar-custom .navbar-nav li a:active {
   background: rgba(0, 0, 0, 0.12);
 }
 @media only screen and (min-width: 768px) {
@@ -887,27 +879,28 @@ samp {
     color: white;
     padding: 20px;
     line-height: 20px;
+    height: auto;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(255, 255, 255, 0.8);
   }
-  .navbar-custom .nav li a {
+  .navbar-custom .navbar-nav li a {
     color: white;
     padding: 20px;
   }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
+  .navbar-custom .navbar-nav li a:hover,
+  .navbar-custom .navbar-nav li a:focus {
     color: rgba(255, 255, 255, 0.8);
   }
-  .navbar-custom .nav li a:active {
+  .navbar-custom .navbar-nav li a:active {
     background: none;
   }
 }
-.navbar-custom.invert .navbar-toggle:active {
+.navbar-custom.invert .navbar-toggler:active {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.navbar-custom.invert .navbar-toggle .icon-bar {
+.navbar-custom.invert .navbar-toggler .icon-bar {
   background-color: #404040;
 }
 .navbar-custom.invert .navbar-brand {
@@ -915,14 +908,14 @@ samp {
 }
 .navbar-custom.invert .navbar-brand:hover,
 .navbar-custom.invert .navbar-brand:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
-.navbar-custom.invert .nav li a {
+.navbar-custom.invert .navbar-nav li a {
   color: #404040;
 }
-.navbar-custom.invert .nav li a:hover,
-.navbar-custom.invert .nav li a:focus {
-  color: #0085a1;
+.navbar-custom.invert .navbar-nav li a:hover,
+.navbar-custom.invert .navbar-nav li a:focus {
+  color: #0085A1;
 }
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
@@ -953,14 +946,14 @@ samp {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #0085A1;
   }
-  .navbar-custom.is-fixed .nav li a {
+  .navbar-custom.is-fixed .navbar-nav li a {
     color: #404040;
   }
-  .navbar-custom.is-fixed .nav li a:hover,
-  .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+  .navbar-custom.is-fixed .navbar-nav li a:hover,
+  .navbar-custom.is-fixed .navbar-nav li a:focus {
+    color: #0085A1;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -973,7 +966,7 @@ samp {
 }
 .intro-header {
   background: no-repeat center center;
-  background-color: #cccccc;
+  background-color: #ccc;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1130,7 +1123,7 @@ samp {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #0085A1;
 }
 .post-preview > a > .post-title {
   font-size: 21px;
@@ -1147,7 +1140,7 @@ samp {
 }
 .post-preview > .post-meta {
   font-family: 'Lora', 'Times New Roman', serif;
-  color: #cccccc;
+  color: #ccc;
   font-size: 16px;
   font-style: italic;
   margin-top: 0;
@@ -1158,7 +1151,7 @@ samp {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #0085A1;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -1180,7 +1173,7 @@ samp {
   color: #a3a3a3;
 }
 .post-content-preview:hover {
-  color: #0085a1;
+  color: #0085A1;
 }
 @media only screen and (min-width: 768px) {
   .post-content-preview {
@@ -1220,14 +1213,14 @@ footer .copyright a {
 }
 footer .copyright a:hover,
 footer .copyright a:focus {
-  color: #0085a1;
+  color: #0085A1;
 }
 .floating-label-form-group {
   font-size: 14px;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -1249,7 +1242,7 @@ footer .copyright a:focus {
   top: 2em;
   margin: 0;
   font-size: 0.85em;
-  line-height: 1.764705882em;
+  line-height: 1.76470588em;
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
@@ -1258,19 +1251,19 @@ footer .copyright a:focus {
   -ms-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
 }
-.floating-label-form-group::not(:first-child) {
+.floating-label-form-group:not(:first-child) {
   padding-left: 14px;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #eee;
 }
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #0085A1;
 }
 form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #eee;
 }
 .btn {
   /* Hux learn from
@@ -1292,16 +1285,33 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
   color: white;
 }
 .pager {
   margin: 20px 0 0 !important;
   padding: 0px !important;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+.pager li {
+  display: inline;
+}
+.pager li.previous > a,
+.pager li.previous > span {
+  float: left;
+}
+.pager li.next > a,
+.pager li.next > span {
+  float: right;
 }
 .pager li > a,
 .pager li > span {
+  display: inline-block;
+  border: 1px solid #ddd;
+  text-decoration: none;
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
@@ -1329,8 +1339,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #0085A1;
+  border: 1px solid #0085A1;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
@@ -1340,19 +1350,19 @@ form .row:first-child .floating-label-form-group {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #cccccc;
+  color: #ccc;
   background-color: #404040;
   cursor: not-allowed;
 }
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #0085A1;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #0085A1;
 }
 img::selection {
   color: white;
@@ -1445,7 +1455,7 @@ img::-moz-selection {
 #tag_cloud a.tag-button--all,
 #tag_cloud .tag.tag-button--all {
   font-weight: 700;
-  color: #0085a1!important;
+  color: #0085a1 !important;
 }
 #tag_cloud a.tag-button--all:hover,
 #tag_cloud .tag.tag-button--all:hover,
@@ -1539,69 +1549,36 @@ img::-moz-selection {
   margin: 1.5em auto 1.6em auto;
 }
 /* Hux Optimize UserExperience */
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
+.navbar-custom .navbar-toggler:focus,
+.navbar-custom .navbar-toggler:hover {
   background-color: inherit;
+  box-shadow: none;
 }
-.navbar-default .navbar-toggle:active {
+.navbar-custom .navbar-toggler:active {
   background-color: rgba(255, 255, 255, 0.25);
 }
 /* Hux customize Style for navBar button */
-.navbar-default .navbar-toggle {
+.navbar-custom .navbar-toggler {
   border-color: transparent;
   padding: 19px 16px;
   margin-top: 2px;
   margin-right: 2px;
   margin-bottom: 2px;
   border-radius: 50%;
+  box-shadow: none;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-custom .navbar-toggler .icon-bar {
+  display: block;
   width: 18px;
+  height: 2px;
   border-radius: 0px;
   background-color: white;
 }
-.navbar-default .navbar-toggle .icon-bar + .icon-bar {
+.navbar-custom .navbar-toggler .icon-bar + .icon-bar {
   margin-top: 3px;
 }
-/* Hux customize Style for Duoshuo */
 .comment {
   margin-top: 20px;
-}
-.comment #ds-thread #ds-reset a.ds-like-thread-button {
-  border: 1px solid #ddd;
-  border-radius: 0px;
-  background: white;
-  box-shadow: none;
-  text-shadow: none;
-}
-.comment #ds-thread #ds-reset li.ds-tab a.ds-current {
-  border: 1px solid #ddd;
-  border-radius: 0px;
-  background: white;
-  box-shadow: none;
-  text-shadow: none;
-}
-.comment #ds-thread #ds-reset .ds-textarea-wrapper {
-  background: none;
-}
-.comment #ds-thread #ds-reset .ds-gradient-bg {
-  background: none;
-}
-.comment #ds-thread #ds-reset .ds-post-options {
-  border-bottom: 1px solid #ccc;
-}
-.comment #ds-thread #ds-reset .ds-post-button {
-  border-bottom: 1px solid #ccc;
-}
-.comment #ds-thread #ds-reset .ds-post-button {
-  background: white;
-  box-shadow: none;
-}
-.comment #ds-thread #ds-reset .ds-post-button:hover {
-  background: #eeeeee;
-}
-#ds-smilies-tooltip ul.ds-smilies-tabs li a {
-  background: white !important;
 }
 .page-fullscreen .intro-header {
   position: fixed;

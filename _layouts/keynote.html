@@ -17,8 +17,8 @@ layout: default
 
             <!-- Post Container -->
             <div class="post-container
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1 ">
+                col-lg-8 offset-lg-2
+                col-md-10 offset-md-1">
 
 				{{ content }}
 
@@ -26,7 +26,7 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{page.previous.title}}">
                         Previous<br>
                         <span>{{page.previous.title}}</span>
                         </a>
@@ -34,7 +34,7 @@ layout: default
                     {% endif %}
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{page.next.title}}">
                         Next<br>
                         <span>{{page.next.title}}</span>
                         </a>
@@ -57,8 +57,8 @@ layout: default
 
             <!-- Sidebar Container -->
             <div class="sidebar-container
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1 ">
+                col-lg-8 offset-lg-2
+                col-md-10 offset-md-1">
 
                 <!-- Featured Tags -->
                 {% include featured-tags.html %}
