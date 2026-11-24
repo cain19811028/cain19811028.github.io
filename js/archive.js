@@ -6,11 +6,17 @@ https://github.com/kitian616/jekyll-TeXt-theme
   function queryString() {
     // This function is anonymous, is executed immediately and
     // the return value is assigned to QueryString!
-    var i = 0, queryObj = {}, pair;
+    var i = 0, queryObj = Object.create(null), pair;
     var queryStr = window.location.search.substring(1);
+    if (!queryStr) {
+      return queryObj;
+    }
     var queryArr = queryStr.split('&');
     for (i = 0; i < queryArr.length; i++) {
       pair = queryArr[i].split('=');
+      if (!pair[0]) {
+        continue;
+      }
       // If first entry with this name
       if (typeof queryObj[pair[0]] === 'undefined') {
         queryObj[pair[0]] = pair[1];
@@ -64,7 +70,9 @@ https://github.com/kitian616/jekyll-TeXt-theme
       if (!_tag) {
         return $tagShowAll;
       }
-      var _buttons = $articleTags.filter('[data-encode="' + _tag + '"]');
+      var _buttons = $articleTags.filter(function() {
+        return $(this).attr('data-encode') === _tag;
+      });
       if (_buttons.length === 0) {
         return $tagShowAll;
       }

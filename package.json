@@ -3,18 +3,21 @@
     "title": "Cain's Blog",
     "author": "Cain <cain19811028@gmail.com>",
     "version": "0.0.1",
-    "homepage": "http://cain19811028.github.io",
+    "homepage": "https://cain19811028.github.io",
     "repository": {
         "type": "git",
         "url": "https://github.com/cain19811028/cain19811028.github.io"
     },
     "bugs": "https://github.com/cain19811028/cain19811028.github.io/issues",
     "devDependencies": {
-        "grunt": "~1.4.1",
+        "grunt": "^1.6.3",
         "grunt-contrib-less": "~3.0.0",
         "grunt-contrib-watch": "~1.1.0",
         "grunt-banner": "~0.6.0",
-        "grunt-contrib-uglify": "~5.0.1"
+        "grunt-contrib-uglify": "^5.2.2"
+    },
+    "overrides": {
+        "minimatch": "^3.1.5"
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
